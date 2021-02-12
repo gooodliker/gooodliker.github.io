@@ -1,0 +1,1350 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#222327">
+  <link rel="stylesheet" type="text/css" href="stylesheets/libs.min.css">
+	<link rel="stylesheet" type="text/css" href="libs/photoswipe/photoswipe.css">
+	<link rel="stylesheet" type="text/css" href="libs/photoswipe/default-skin/default-skin.css">
+	<link rel="stylesheet" type="text/css" href="libs/magnific-popup/magnific-popup.css">
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="libs/slick/slick-theme.css"/>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.css">
+
+	<!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/solid.css" integrity="sha384-rdyFrfAIC05c5ph7BKz3l5NG5yEottvO/DQ0dCrwD8gzeQDjYBHNr1ucUpQuljos" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/fontawesome.css" integrity="sha384-u5J7JghGz0qUrmEsWzBQkfvc8nK3fUT7DCaQzNQ+q4oEXhGSx+P2OqjWsfIRB8QT" crossorigin="anonymous"> -->
+	<link rel="stylesheet" type="text/css" href="stylesheets/styles.min.css">
+  <title>Habmotors - сервис и запчасти для спецтехники</title>
+</head>
+<body>
+		<button class="action action--open" aria-label="Open Menu"><i class="fas fa-bars"></i></button>
+    <div class="menu__container">
+      <div class="fixed">
+        <nav id="ml-menu" class="menu">
+            <div class="horizontal__line"></div>
+            <button class="action action--close" aria-label="Close Menu"><span class="icon icon--cross"><i class="fas fa-times"></i></span></button>
+            <ul data-menu="main" class="menu__level" tabindex="-1" role="menu" aria-label="All">
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Главная</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1" aria-owns="submenu-1" href="#">Продукция</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-2" aria-owns="submenu-2" href="#">Услуги</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Портфолио</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Вакансии</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Контакты</a></div></li>
+            </ul>
+            <ul data-menu="submenu-1" id="submenu-1" class="menu__level" tabindex="-1" role="menu" aria-label="Products">
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1" aria-owns="submenu-1-1" href="#">Запчасти и комплектующие</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-2" aria-owns="submenu-1-2" href="#">Диагностическое оборудование</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-3" aria-owns="submenu-1-3" href="#">Спецтехника</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-4" aria-owns="submenu-1-4" href="#">Технические системы</a></div></li>
+            </ul>
+            <ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="SpareParts">
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1-1" aria-owns="submenu-1-1-1" href="#">Запчасти для двигателей</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1-2" aria-owns="submenu-1-1-2" href="#">Запчасти для гидравлики</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1-3" aria-owns="submenu-1-1-3" href="#">Другие запчасти</a></div></li>
+						</ul>
+						<ul data-menu="submenu-1-1" id="submenu-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="SpareParts">
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1-1" aria-owns="submenu-1-1-1" href="#">Запчасти для двигателей</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1-2" aria-owns="submenu-1-1-2" href="#">Запчасти для гидравлики</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" data-submenu="submenu-1-1-3" aria-owns="submenu-1-1-3" href="#">Другие запчасти</a></div></li>
+            </ul>
+            <ul data-menu="submenu-1-1-1" id="submenu-1-1-1" class="menu__level" tabindex="-1" role="menu" aria-label="EngineParts">
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Генераторы</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Датчики</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Двигатели</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Дизельные генераторы</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Запчасти для ГРМ</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Запчасти для ЦПГ</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Компрессоры</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Насосы</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Прокладки</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Сальники</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Соленоиды</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Стартеры</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Турбокомпрессоры</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Уплотнения</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Фильтры</a></div></li>
+                <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Форсунки</a></div></li>
+              </ul>
+            <ul data-menu="submenu-2" id="submenu-2" class="menu__level" tabindex="-1" role="menu" aria-label="Service">
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Диагностика</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Изготовление</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Ремонт</a></div></li>
+              <li class="menu__item" role="menuitem"><div class="menu__link"><a class="link link--page" href="#">Установка</a></div></li>
+            </ul>
+        </nav>
+      </div>    
+    </div>
+    <div class="content__container">
+      <header>
+				<img class="logo" src="images/logo_white.svg" onerror="this.onerror=null; this.src='images/logo_white.png'">
+				<h1>СЕРВИС И ЗАПЧАСТИ ДЛЯ СПЕЦТЕХНИКИ</h1>
+			</header>
+			<div class="content">
+				<div class="content__title">
+					<h2>НОВАЯ ПРОДУКЦИЯ</h2>
+					<div class="black__line"></div>
+				</div>
+				<div class="content__slider">
+					<div class="prev"><i class="fas fa-chevron-left"></i></div>
+					<div class="owl-carousel">
+						<div class="item">
+							<div class="product-1">
+								<img src="images/new_products_slider/1.png" alt="">
+								<hr>
+								<p>Грейферный захват Vahva C46HD</p>
+								<div class="more__wrap">
+									<a href="">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product-2">
+								<div class="discount"><p>-50%</p></div>
+								<img src="images/new_products_slider/2.jpg" alt="">
+								<hr>
+								<p>Дизельный генератор YANMAR Серии YDG</p>
+								<div class="more__wrap">
+									<a href="">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product-3">
+								<img src="images/new_products_slider/3.webp" alt="">
+								<hr>
+								<p>Дизельный генератор YANMAR Серии YH</p>
+								<div class="more__wrap">
+									<a href="">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+						</div>
+						<div class="item">
+							<div class="product-4">
+								<img src="images/new_products_slider/4.png" alt="">
+								<hr>
+								<p>Ротатор Formiko FHR 10 FD2</p>
+								<div class="more__wrap">
+									<a href="">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="next"><i class="fas fa-chevron-right"></i></div>
+				</div>
+				<div class="seeall__wrap">
+					<a class="see__all" href="">ВСЕ ТОВАРЫ</a>
+				</div>
+			</div>
+			<footer>
+				<div class="adress__wrap">
+					<p>г. Хабаровск, ул. Воронежская, 129б (автоколонна 1269) - офиc ул. Кирова, 1 литера Л - производственные помещения</p>
+					<p>Тел.: +7(4212)-20-10-51 / +7(914)-158-10-51 / +7(924)-411-10-51 Техническая поддержка: +7(914)-158-30-65</p>
+					<hr>
+				</div>
+				<div class="socials__wrap">
+					<a href="https://www.facebook.com/people/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%94%D0%B5%D0%BC%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE/100024866406881"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/watch?v=Wg7aFRPLv0k"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/technoengineering_khv/?hl=ru"><i class="fab fa-instagram"></i></a>
+				</div>
+			</footer>
+    </div>
+
+		<!-- PRODUCTS PAGE -->
+		<div class="page__wrap prods__wrap" style="display: none;">
+			<div class="header__wrap">
+				<h1>ГЕНЕРАТОРЫ</h1>
+				<div class="horizontal__blackline"></div>
+				<ul class="page__breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><i class="fa fa-angle-right"></i></li>
+					<li><a href="#">Генераторы</a></li>
+				</ul>
+			</div>
+			<div class="content__wrap">
+				<div class="filter__wrap">
+					<p>Производитель:</p>
+					<select class="manufacturer__filter" name="" id="">
+						<option style="display: none;" selected>
+						<option value="1">Caterpillar</option>
+						<option value="2">Cummins</option>
+						<option value="3">Komatsu</option>
+						<option value="4">Kubota</option>
+						<option value="5">Perkins</option>
+						<option value="6">Timberjack</option>
+					</select>
+					<input name="" id="" placeholder="Поиск по названию...">
+					<div class="buttons__wrap">
+						<div class="button__wrap">
+							<a class="btn btn__search" href=""><i class="fas fa-search fa-pulse"></i></a>
+						</div>
+						<div class="button__wrap">
+								<a class="btn btn__reset" href="">Сбросить</a>
+						</div>
+					</div>
+				</div>
+				<div class="products__wrap">
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/1.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<div class="discount"><p>-50%</p></div>
+							<img src="images/products/2.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/3.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/4.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/5.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/6.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/7.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/8.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<div class="discount"><p>-20%</p></div>
+							<img src="images/products/9.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+						<div class="product__item">
+							<img src="images/products/10.jpg" alt="">
+							<hr>
+							<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+							<div class="more__wrap">
+								<a href="">ПОДРОБНЕЕ</a>
+							</div>
+						</div>
+					</div>
+					<div class="product__wrap">
+							<div class="product__item">
+								<img src="images/products/10.jpg" alt="">
+								<hr>
+								<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+								<div class="more__wrap">
+									<a href="">ПОДРОБНЕЕ</a>
+								</div>
+							</div>
+						</div>
+						<div class="product__wrap">
+								<div class="product__item">
+									<img src="images/products/10.jpg" alt="">
+									<hr>
+									<p>Генератор Cummins 6C 8.3 (24V/70A) 4930794</p>
+									<div class="more__wrap">
+										<a href="">ПОДРОБНЕЕ</a>
+									</div>
+								</div>
+							</div>
+				</div>
+				<div class="seemore__wrap">
+					<a class="seemore" href="">ПОКАЗАТЬ ЕЩЁ</a>
+				</div>
+			</div>
+			<div class="totop__wrap totop__left">
+				<a href="" class="totop__btn">
+					<i class="fas fa-angle-up fa-pulse"></i>
+				</a>
+			</div>
+			<div class="totop__wrap totop__right">
+				<a href="" class="totop__btn">
+					<i class="fas fa-angle-up fa-pulse"></i>
+				</a>
+			</div>
+		</div>
+		
+
+		<!-- PRODUCT ITEM PAGE -->
+		<div class="page__wrap prod__wrap" style="display: none;">
+			<div class="header__wrap">
+				<h1>ГЕНЕРАТОР KUBOTA</h1>
+				<div class="horizontal__blackline"></div>
+				<ul class="page__breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><i class="fa fa-angle-right"></i></li>
+					<li><a href="#">Генераторы</a></li>
+					<li><i class="fa fa-angle-right"></i></li>
+					<li><a href="#">Генератор Kubota</a></li>
+				</ul>
+			</div>
+			<div class="product__content__wrap">
+				<div class="gallery__wrap">
+					<h2>Генератор Kubota D722-E</h2>
+					<div class="horizontal__blackline"></div>
+					<div class="product__gallery my-gallery itemscope itemtype="http://schema.org/ImageGallery"">
+						<div class="product__images">
+							<figure class="product__preview" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/products/3.jpg" itemprop="contentUrl" data-size="600x600">
+									<img src="images/products/3.jpg" itemprop="thumbnail" alt="Image description" />
+								</a>
+								<!-- <figcaption itemprop="caption description">Image caption</figcaption> -->
+							</figure>
+							<figure class="product__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/products/3.jpg" itemprop="contentUrl" data-size="600x600">
+									<img src="images/products/3.jpg" itemprop="thumbnail" alt="Image description" />
+								</a>
+							</figure>
+							<figure class="product__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/products/3.jpg" itemprop="contentUrl" data-size="600x600">
+									<img src="images/products/3.jpg" itemprop="thumbnail" alt="Image description" />
+								</a>
+							</figure>
+							<figure class="product__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+								<a href="images/products/3.jpg" itemprop="contentUrl" data-size="600x600">
+									<img src="images/products/3.jpg" itemprop="thumbnail" alt="Image description" />
+								</a>
+							</figure>
+						</div>
+						<div class="makeorder__btn__wrap">
+							<a class="makeorder__btn" href="#order__form">ЗАКАЗАТЬ</a>
+						</div>						
+						<form id="order__form" class="white-popup-block mfp-hide">
+							<div class="fields__wrap">
+								<h3>Оформление заказа</h3>
+								<div class="horizontal__whiteline"></div>
+									<div class="spinfield__wrap">
+										<label for="quantity">Выберите количество:</label>
+										<div class="quantity">
+											<input type="number" name="quantity" min="1" max="9999" step="1" value="1" disabled="disabled">
+										</div>
+									</div>
+									<div class="inputfield__wrap">
+										<input id="name" name="name" type="text" maxlength="40" placeholder="Иван Иванов" required="">
+										<label for="name">Ваше имя</label>
+									</div>
+									<div class="inputfield__wrap">
+										<input id="email" name="email" type="email" maxlength="30" placeholder="example@domain.com" required="">
+										<label for="email">Ваш E-mail</label>
+									</div>
+									<div class="inputfield__wrap">
+										<input id="phone" name="phone" type="tel" maxlength="11" placeholder="+7(999)-999-99-99" required="">
+										<label for="phone">Ваш телефон</label>
+									</div>
+									<div class="inputfield__wrap">
+										<textarea id="message" name="message" type="text" maxlength="400" rows="5" placeholder="Хотелось бы осмотреть товар..." required=""></textarea>
+										<label for="message">Ваше сообщение</label>
+									</div>
+									<div class="checkfield__wrap">
+										<label>Согласен на <a class="privacy__policy" href="" target="blank_">&nbsp;обработку&nbsp;</a> персональных данных<input id="agreement" name="agreement" type="checkbox" checked="checked" required>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+							</div>
+							<div class="processorder__btn__wrap">
+								<button type="submit" class="processorder__btn" href="#success__modal">ОФОРМИТЬ ЗАКАЗ</button>
+							</div>
+							<div id="success__modal__wrap" class="success__modal__wrap">
+								<div class="success__modal">
+									<div class="modal__header">
+											<i class="fas fa-check-circle"></i>
+											<h3>Заказ оформлен!</h3>
+									</div>
+									<div class="horizontal__blackline"></div>
+									<div class="modal__content">
+										<p>Наш оператор свяжется с Вами в ближайшее время для уточнения деталей заказа, спасибо!</p>
+									</div>
+									<div class="ok__btn__wrap">
+										<button type="submit" class="ok__btn">ОК</button>
+									</div>
+								</div>
+							</div>		
+						</form>
+					</div>
+				</div>
+				<div class="product__details__wrap">
+					<h2>Генератор Kubota D722-E</h2>
+					<div class="horizontal__blackline"></div>
+					<div class="product__description">
+						<div class="product__description__title">
+							<h3>Описание</h3>
+						</div>
+						<div class="product__description__text">
+							<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt laborum temporibus velit incidunt qui. Quisquam cum esse, neque placeat eum nihil sit, enim blanditiis similique, quae iste. Et, aperiam hic. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo sed molestias cum sapiente qui. Dolores nesciunt obcaecati rerum a labore, minima dolorem optio minus temporibus nobis modi architecto earum dolor.</p>
+						</div>
+					</div>
+					<div class="product__uniqueblocks">
+						<div class="product__uniqueblock" id="uniqueblock_1" data-type="table">
+							<div class="product__uniqueblock_title">
+								<h3>Характеристики:</h3>
+							</div>
+							<div class="product__uniqueblock_content">
+								<div class="table__wrap">
+									<table id="" class="uniquetable-default">
+										<thead class="table__headrow__wrap">
+											<tr class="table__headrow">
+												<th class="table__header"></th>
+												<th class="table__header"></th>
+											</tr>
+										</thead>
+										<tbody class="table__databody">
+											<tr class="table__datarow">
+												<td class="table__data">Напряжение</td>
+												<td class="table__data">12 volt</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Сила тока</td>
+												<td class="table__data">40 amp</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Размер посадочного места А</td>
+												<td class="table__data">19 mm</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Размер посадочного места Б</td>
+												<td class="table__data">25 mm</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Количество ручьев шкива</td>
+												<td class="table__data">1 pcs</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Тип сигнала</td>
+												<td class="table__data">L-IG(R)</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Помпа</td>
+												<td class="table__data">Отсутствует</td>
+											</tr>
+										</tbody>
+										<tfoot class="table__footrow__wrap">
+											<tr class="table__footrow">
+												<th class="table__header"></th>
+												<th class="table__header"></th>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+						<div class="product__uniqueblock" id="uniqueblock_2" data-type="list">
+							<div class="product__uniqueblock_title">
+								<h3>Применимость:</h3>
+							</div>
+							<div class="product__uniqueblock_content">
+								<div class="list__wrap">
+									<ul class="dot-uniquelist">
+										<li>Cargo, CAS, Denso,</li>
+										<li>KUBOTA F1900 2008- 0719ccm Kubota D722,</li>
+										<li>KUBOTA F2880 2008- 1261ccm Kubota D1305,</li>
+										<li>KUBOTA KX41-3V 2004- 0898ccm Kubota D902,</li>
+										<li>KUBOTA ENGINES D722 - 0719ccm,</li>
+										<li>MOFFETT M4 Fork Lift - 1123ccm Kubota D1105-T,</li>
+										<li>NORCAR 744 2005- 0719ccm Kubota D722,</li>
+										<li>NORCAR 755 2007- 0719ccm Kubota D722,</li>
+										<li>RANSOMES HR330T 2008- 1123ccm Kubota D1105-T,</li>
+										<li>SCHAFFER 2020 2010- 0719ccm Kubota D722-E,</li>
+										<li>SCHAFFER 2021 2008- 0719ccm Kubota D722-E,</li>
+										<li>SCHAFFER 217 2005- 0719ccm Kubota D722-E,</li>
+										<li>SCHAFFER 326 - 1123ccm Kubota D1105-E,</li>
+										<li>SCHAFFER 338 - 1498ccm Kubota V1505-E,</li>
+										<li>STALDCAT Avant 314S 2000- 0497ccm Kubota,</li>
+										<li>TEREX HD850 2004-2011 0898ccm Kubota D905,</li>
+										<li>TORO Groundmaster 7210 2008- 1123ccm Kubota D1105-T,</li>
+										<li>TORO Reelmaster 5610 2008- 1498ccm Kubota V1505-T.</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="product__uniqueblock" id="uniqueblock_3" data-type="text">
+							<div class="product__uniqueblock_title">
+								<h3>Примечания:</h3>
+							</div>
+							<div class="product__uniqueblock_content">
+								<div class="text__wrap">
+									<div class="uniquetext">
+										<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat dolores itaque ullam vitae quibusdam aliquid illo quisquam quasi, consectetur facere dolore ipsam, ducimus et quas quam exercitationem quae sed aliquam?</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="product__uniqueblock" id="uniqueblock_4" data-type="table">
+							<div class="product__uniqueblock_title">
+								<h3>Аналоги:</h3>
+							</div>
+							<div class="product__uniqueblock_content">
+								<div class="table__wrap">
+									<table id="" class="uniquetable-default">
+										<thead class="table__headrow__wrap">
+											<tr class="table__headrow">
+												<th class="table__header"></th>
+												<th class="table__header"></th>
+											</tr>
+										</thead>
+										<tbody class="table__databody">
+											<tr class="table__datarow">
+												<td class="table__data">Cargo</td>
+												<td class="table__data">113921</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">CAS</td>
+												<td class="table__data">CAL40314AS</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Denso</td>
+												<td class="table__data">100211-4521</td>
+											</tr>
+											<tr class="table__datarow">
+												<td class="table__data">Denso</td>
+												<td class="table__data">100211-4611</td>
+											</tr>
+										</tbody>
+										<tfoot class="table__footrow__wrap">
+											<tr class="table__footrow">
+												<th class="table__header"></th>
+												<th class="table__header"></th>
+											</tr>
+										</tfoot>
+									</table>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="totop__wrap totop__left">
+				<a href="" class="totop__btn">
+					<i class="fas fa-angle-up fa-pulse"></i>
+				</a>
+			</div>
+			<div class="totop__wrap totop__right">
+				<a href="" class="totop__btn">
+					<i class="fas fa-angle-up fa-pulse"></i>
+				</a>
+			</div>
+		</div>
+		
+
+		<!-- SERVICE ITEM PAGE -->
+		<div class="page__wrap service__wrap1" style="display: none;">
+				<div class="header__wrap">
+					<h1>ДИАГНОСТИКА</h1>
+					<div class="horizontal__blackline"></div>
+					<ul class="page__breadcrumbs">
+						<li><a href="#">Главная</a></li>
+						<li><i class="fa fa-angle-right"></i></li>
+						<li><a href="#">Диагностика</a></li>
+					</ul>
+				</div>
+				<div class="service__content__wrap">
+					<div class="service__preview__wrap" style="background: url('./images/service/diagnostics.jpg');">
+						<div class="service__preview">
+							<div class="service__line__wrap">
+								<h3>ДИАГНОСТИКА</h3>
+								<div class="makeorder__btn__wrap">
+									<a class="makeorder__btn" href="#orderservice__form">ЗАКАЗАТЬ</a>
+								</div>
+								<form id="orderservice__form" class="white-popup-block mfp-hide">
+									<div class="fields__wrap">
+										<h3>Оформление заказа</h3>
+										<div class="horizontal__whiteline"></div>
+											<div class="inputfield__wrap">
+												<input id="name" name="name" type="text" maxlength="40" placeholder="Иван Иванов" required="">
+												<label for="name">Ваше имя</label>
+											</div>
+											<div class="inputfield__wrap">
+												<input id="email" name="email" type="email" maxlength="30" placeholder="example@domain.com" required="">
+												<label for="email">Ваш E-mail</label>
+											</div>
+											<div class="inputfield__wrap">
+												<input id="phone" name="phone" type="tel" maxlength="11" placeholder="+7(999)-999-99-99" required="">
+												<label for="phone">Ваш телефон</label>
+											</div>
+											<div class="inputfield__wrap">
+												<textarea id="message" name="message" type="text" maxlength="400" rows="5" placeholder="Хотелось бы воспользоваться Вашими услугами по..." required=""></textarea>
+												<label for="message">Ваше сообщение</label>
+											</div>
+											<div class="checkfield__wrap">
+												<label>Согласен на <a class="privacy__policy" href="" target="blank_">&nbsp;обработку&nbsp;</a> персональных данных<input id="agreement" name="agreement" type="checkbox" required checked="checked">
+													<span class="checkmark"></span>
+												</label>
+											</div>
+											<div class="inputfield__wrap">
+												<input id="service_id" name="service_id" type="hidden">
+											</div>
+									</div>
+									<div class="processorder__btn__wrap">
+										<button type="submit" class="processorder__btn" href="#success__modal">ОФОРМИТЬ ЗАКАЗ</button>
+									</div>
+									<div id="success__modal__wrap" class="success__modal__wrap">
+										<div class="success__modal">
+											<div class="modal__header">
+												<i class="fas fa-check-circle"></i>
+												<h3>Заказ оформлен!</h3>
+											</div>
+											<div class="horizontal__blackline"></div>
+											<div class="modal__content">
+												<p>Наш оператор свяжется с Вами в ближайшее время для уточнения деталей заказа, спасибо!</p>
+											</div>
+											<div class="ok__btn__wrap">
+												<button type="submit" class="ok__btn">ОК</button>
+											</div>
+										</div>
+									</div>		
+								</form>
+							</div>
+						</div>
+					</div>
+					<div class="service__description__wrap">
+						<div class="service__description">
+							<p>Компания ООО &laquo;ХабМоторс&#187; производит диагностику гидравлического оборудования: гидронасосов и гидромоторов (аксиально-поршневых) производителей: Kawasaki, Rexroth, Linde, Parker, Vickers, Eaton, Sauer-Danfoss, Uchida и других марок. У нас большой опыт по диагностике гидронасосов и гидромоторов, а также многолетние партнёрские отношения с поставщиками из Азии и Европы, поэтому мы можем гарантировать отличное качество и короткие сроки работ.</p>
+						</div>
+					</div>
+					<div class="otherservice__items__wrap">
+						<div class="otherservice__items">
+							<div class="otherservice__item__wrap">
+								<div class="otherservice__item">
+									<div class="otherservice__line__wrap">
+										<h3>ИЗГОТОВЛЕНИЕ</h3>
+										<div class="showmore__btn__wrap">
+											<a class="showmore__btn" href="#">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+								<div class="otherservice__bg" style="background: url('./images/service/production.jpg');"></div>
+							</div>
+							<div class="otherservice__item__wrap">
+								<div class="otherservice__item">
+									<div class="otherservice__line__wrap">
+										<h3>РЕМОНТ</h3>
+										<div class="showmore__btn__wrap">
+											<a class="showmore__btn" href="#">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+								<div class="otherservice__bg" style="background: url('./images/service/repair.jpg');"></div>
+							</div>
+							<div class="otherservice__item__wrap">
+								<div class="otherservice__item">
+									<div class="otherservice__line__wrap">
+										<h3>УСТАНОВКА</h3>
+										<div class="showmore__btn__wrap">
+											<a class="showmore__btn" href="#">ПОДРОБНЕЕ</a>
+										</div>
+									</div>
+								</div>
+								<div class="otherservice__bg" style="background: url('./images/service/installing.jpg');"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+
+		<!-- WORKS ITEM PAGE -->
+		<div class="page__wrap works__wrap" style="display: none;">
+			<div class="header__wrap">
+				<h1>ПОРТФОЛИО</h1>
+				<div class="horizontal__blackline"></div>
+				<ul class="page__breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><i class="fa fa-angle-right"></i></li>
+					<li><a href="#">Портфолио</a></li>
+				</ul>
+			</div>
+			<div class="works__content__wrap">
+				<div class="works__content">
+					<div class="works__item__wrap">
+						<div class="work__item">
+							<div class="workitem__header">
+								<h2>Установка грейферного захвата TIGERGRIP 42S с ротатором GR16S на HITACHI ZX160</h2>
+								<div class="horizontal__blackline"></div>
+							</div>
+							<div class="workitem__content">
+								<div class="workitem__description">
+									<h3>Описание:</h3>
+									<p>Была произведена установка грейферного захвата Tigergrip 42s с ротатором Baltrotors GR16S на экскаватор Hitachi ZX160. Также были изготовлены и смонтированы дополнительные гидролинии на стреле и рукояти с запорными шаровыми кранами высокого давления Inteva для работы с ковшом. Изготовлен подвес для крепления грейфера с ротатором к стреле собственной разработки. Установлена гидравлическая педаль управления и выставлено необходимое раочее давление на клапанах для корректной работы.</p>
+								</div>
+								<div class="workitem__gallery__wrap">
+									<div class="workitem__gallery my-gallery itemscope itemtype="http://schema.org/ImageGallery"">
+										<h3>Фотоотчет:</h3>
+										<div class="workitem__images slider slider-nav">
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/1.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/1.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/2.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/2.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/3.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/3.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/4.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/4.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/5.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/5.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/6.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/6.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/7.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/7.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/8.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/8.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/9.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/9.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/1/10.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/1/10.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="work__item">
+							<div class="workitem__header">
+								<h2>Гидроразводка экскаватора CAT320DL, изготовление и монтаж гидролиний для грейферного захвата</h2>
+								<div class="horizontal__blackline"></div>
+							</div>
+							<div class="workitem__content">
+								<div class="workitem__description">
+									<h3>Описание:</h3>
+									<p>Изготовление и установка дополнительных гидролиний на экскаватор CAT320DL для монтажа грейферного захвата Tigergrip TG55S с жестким ротатором DW3.5</p>
+								</div>
+								<div class="workitem__gallery__wrap">
+									<div class="workitem__gallery my-gallery itemscope itemtype="http://schema.org/ImageGallery"">
+										<h3>Фотоотчет:</h3>
+										<div class="workitem__images slider slider-nav">
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/1.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/1.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/2.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/2.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/3.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/3.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/4.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/4.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/5.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/5.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/6.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/6.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/7.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/7.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/8.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/8.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/9.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/9.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/2/10.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/2/10.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="work__item">
+							<div class="workitem__header">
+								<h2>Монтаж гидролиний на экскаваторе KOMATSU PC200/7 для монтажа грейферного захвата</h2>
+								<div class="horizontal__blackline"></div>
+							</div>
+							<div class="workitem__content">
+								<div class="workitem__description">
+									<h3>Описание:</h3>
+									<p>Изготовление и установка дополнительных гидролиний на экскаватор KOMATSU PC200/7 для монтажа грейферного захвата Tigergrip TG42S.</p>
+								</div>
+								<div class="workitem__gallery__wrap">
+									<div class="workitem__gallery my-gallery itemscope itemtype="http://schema.org/ImageGallery"">
+										<h3>Фотоотчет:</h3>
+										<div class="workitem__images slider slider-nav">
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/1.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/1.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/2.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/2.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/3.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/3.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/4.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/4.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/5.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/5.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/6.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/6.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/3/7.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/3/7.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="work__item">
+							<div class="workitem__header">
+								<h2>Монтаж гидролиний на экскаваторе KOMATSU PC200/7 с длинной стрелой для грейферного захвата</h2>
+								<div class="horizontal__blackline"></div>
+							</div>
+							<div class="workitem__content">
+								<div class="workitem__description">
+									<h3>Описание:</h3>
+									<p>Изготовление и установка дополнительных гидролиний на экскаватор KOMATSU PC200/7 для монтажа грейферного захвата Tigergrip TG42S с ротатором Baltrotors BR16S</p>
+								</div>
+								<div class="workitem__gallery__wrap">
+									<div class="workitem__gallery my-gallery itemscope itemtype="http://schema.org/ImageGallery"">
+										<h3>Фотоотчет:</h3>
+										<div class="workitem__images slider slider-nav">
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/4/1.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/4/1.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/4/2.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/4/2.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/4/3.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/4/3.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/4/4.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/4/4.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+											<figure class="workitem__image" itemprop="associatedMedia" itemscope itemtype="http://schema.org/ImageObject">
+												<a href="images/works/4/5.webp" itemprop="contentUrl" data-size="600x600">
+													<div class="workitem__overlay"></div>
+													<img src="images/works/4/5.webp" itemprop="thumbnail" alt="Image description" />
+												</a>
+											</figure>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="seemore__wrap">
+						<a class="seemore" href="">ЕЩЁ РАБОТЫ</a>
+					</div>
+					<div class="totop__wrap totop__left">
+						<a href="" class="totop__btn">
+							<i class="fas fa-angle-up fa-pulse"></i>
+						</a>
+					</div>
+					<div class="totop__wrap totop__right">
+						<a href="" class="totop__btn">
+							<i class="fas fa-angle-up fa-pulse"></i>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- VACANCIES PAGE -->
+		<div class="page__wrap vacancies__wrap" style="display: none;">
+			<div class="header__wrap">
+				<h1>ВАКАНСИИ</h1>
+				<div class="horizontal__blackline"></div>
+				<ul class="page__breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><i class="fa fa-angle-right"></i></li>
+					<li><a href="#">Вакансии</a></li>
+				</ul>
+			</div>
+			<div class="vacancies__content__wrap">
+				<div class="vacancies__content">
+					<div class="vacancies__item__wrap">
+						<div class="vacancy__item">
+							<div class="vacancyitem__header">
+								<h2>МЕНЕДЖЕР ПО ПРОДАЖАМ ЗАПЧАСТЕЙ НА СПЕЦТЕХНИКУ</h2>
+								<div class="horizontal__blackline"></div>
+							</div>
+							<div class="vacancyitem__content">
+								<div class="vacancyitem__duties">
+									<h3>Должностные обязанности:</h3>
+									<ul class="dot-uniquelist">
+										<li>Активное продвижение товара</li>
+										<li>Подбор запчастей по каталогу</li>
+										<li>Обработка заявок</li>
+										<li>Отслеживание поставки товара</li>
+										<li>Отслеживание складских запасов</li>
+										<li>Планирование поставок</li>
+										<li>Ведение отчетности</li>
+										<li>Работа в 1С</li>
+									</ul>
+								</div>
+								<div class="vacancyitem vacancyitem__requests">
+									<h3>Требования:</h3>
+									<ul class="dot-uniquelist">
+										<li>Опыт работы в сфере продаж</li>
+										<li>Навыки ведения переговоров, работа с возражениями</li>
+										<li>Свободное владение MS Office</li>
+										<li>Техническая грамотность</li>
+										<li>Активность и коммуникабельность</li>
+										<li>Базовый уровень английского языка, в т.ч. технический</li>
+										<li>Ответственность, трудолюбие</li>
+										<li>Высшее образование</li>
+										<li>Английский язык базовый</li>
+										<li>Водительские права категории B</li>
+									</ul>
+								</div>
+								<div class="vacancyitem__circs">
+									<h3>Условия:</h3>
+									<ul class="dot-uniquelist">
+										<li>Заработная плата по результатам собеседования (от 30000 р.)</li>
+										<li>Оформление по ТК РФ</li>
+										<li>5-ти дневная рабочая неделя</li>
+										<li>График работы с 9:00 до 18:00</li>
+										<li>Полный рабочий день</li>
+										<li>Базовый уровень английского языка, в т.ч. технический</li>
+										<li>Ответственность, трудолюбие</li>
+										<li>Высшее образование</li>
+										<li>Английский язык базовый</li>
+										<li>Водительские права категории B</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="vacancy__item">
+							<div class="vacancyitem__header">
+								<h2>ИНЖЕНЕР-МЕХАНИК ПО РЕМОНТУ СПЕЦТЕХНИКИ</h2>
+								<div class="horizontal__blackline"></div>
+							</div>
+							<div class="vacancyitem__content">
+								<div class="vacancyitem__duties">
+									<h3>Должностные обязанности:</h3>
+									<ul class="dot-uniquelist">
+										<li>Ремонт и техническое обслуживание спецтехники</li>
+										<li>Подбор и заказ запчастей</li>
+										<li>Компьютерная диагностика спецтехники</li>
+										<li>Выявление причин неисправностей, и их устранение</li>
+										<li>Составление акта выполненных работ</li>
+										<li>Работа с технической документацией</li>
+									</ul>
+								</div>
+								<div class="vacancyitem__requests">
+									<h3>Требования:</h3>
+									<ul class="dot-uniquelist">
+										<li>Умение читать гидравлические и электросхемы спецтехники</li>
+										<li>Среднее специальное образование</li>
+										<li>Готовность к командировкам</li>
+										<li>Компьютерные навыки</li>
+										<li>Водительский стаж от 3 лет</li>
+										<li>Английский язык технический</li>
+										<li>Водительские права категории B</li>
+									</ul>
+								</div>
+								<div class="vacancyitem__circs">
+									<h3>Условия:</h3>
+									<ul class="dot-uniquelist">
+										<li>Служебный автомобиль</li>
+										<li>Испытательный срок - 3 месяца</li>
+										<li>Оформление по ТК РФ</li>
+										<li>5-ти дневная рабочая неделя</li>
+										<li>График работы с 9:00 до 18:00</li>
+										<li>Полный рабочий день</li>
+										<li>Командировки</li>
+										<li>На территории работодателя</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="sendresume__btn__wrap">
+					<a class="makeorder__btn sendresume__btn" href="#resume__form">ОТПРАВИТЬ РЕЗЮМЕ</a>
+				</div>						
+				<form id="resume__form" class="white-popup-block mfp-hide">
+					<div class="fields__wrap">
+						<h3>Отправка резюме</h3>
+						<div class="horizontal__whiteline"></div>
+						<div class="inputfield__wrap">
+							<input id="name" name="name" type="text" maxlength="40" placeholder="Иван Иванов" required="">
+							<label for="name">Ваше имя</label>
+						</div>
+						<div class="inputfield__wrap">
+							<input id="email" name="email" type="email" maxlength="30" placeholder="example@domain.com" required="">
+							<label for="email">Ваш E-mail</label>
+						</div>
+						<div class="inputfield__wrap">
+							<input id="phone" name="phone" type="tel" maxlength="11" placeholder="+7(999)-999-99-99" required="">
+							<label for="phone">Ваш телефон</label>
+						</div>
+						<div class="inputfield__wrap">
+							<textarea id="message" name="message" type="text" maxlength="400" rows="5" placeholder="Хотелось бы осмотреть товар..." required=""></textarea>
+							<label for="message">Ваше сообщение</label>
+						</div>
+						<div class="checkfield__wrap">
+							<label>Согласен на <a class="privacy__policy" href="" target="blank_">&nbsp;обработку&nbsp;</a> персональных данных<input id="agreement" name="agreement" type="checkbox" checked="checked" required>
+								<span class="checkmark"></span>
+							</label>
+						</div>
+					</div>
+					<div class="processorder__btn__wrap">
+						<button type="submit" class="processorder__btn" href="#success__modal">ОТПРАВИТЬ РЕЗЮМЕ</button>
+					</div>
+					<div id="success__modal__wrap" class="success__modal__wrap">
+						<div class="success__modal">
+							<div class="modal__header">
+								<i class="fas fa-check-circle"></i>
+								<h3>Заказ оформлен!</h3>
+							</div>
+							<div class="horizontal__blackline"></div>
+							<div class="modal__content">
+								<p>Наш оператор свяжется с Вами в ближайшее время для уточнения деталей заказа, спасибо!</p>
+							</div>
+							<div class="ok__btn__wrap">
+								<button type="submit" class="ok__btn">ОК</button>
+							</div>
+						</div>
+					</div>		
+				</form>
+				<div class="totop__wrap totop__left">
+					<a href="" class="totop__btn">
+						<i class="fas fa-angle-up fa-pulse"></i>
+					</a>
+				</div>
+				<div class="totop__wrap totop__right">
+					<a href="" class="totop__btn">
+						<i class="fas fa-angle-up fa-pulse"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+
+
+		<!-- CONTACTS PAGE -->
+		<div class="page__wrap contacts__wrap" style="display: none;">
+			<div class="header__wrap">
+				<h1>КОНТАКТЫ</h1>
+				<div class="horizontal__blackline"></div>
+				<ul class="page__breadcrumbs">
+					<li><a href="#">Главная</a></li>
+					<li><i class="fa fa-angle-right"></i></li>
+					<li><a href="#">Контакты</a></li>
+				</ul>
+			</div>
+
+			<div class="contacts__content__wrap">
+				<div class="map__wrap">
+					<!-- <div class="map__overlay"></div> -->
+					<div class="map">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3172.684648718035!2d135.06692145841686!3d48.52674647356415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5efac034952f2717%3A0x35cde15de261f730!2z0JDQstGC0L7QutC-0LvQvtC90L3QsCAxMjY5!5e0!3m2!1sru!2sru!4v1542929890360" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
+					</div>
+				</div>
+				<div class="feedback__wrap">
+					<div class="feedback__header">
+						<h2>СВЯЖИТЕСЬ С НАМИ</h2>
+						<div class="horizontal__blackline"></div>
+					</div>
+					<div class="feedback__content">
+						<div class="feedback__form__wrap">
+							<form id="message__form" class="feedback__form">
+								<div class="fields__wrap">
+									<div class="inputfields__wrap">
+										<div class="inputfield__wrap">
+											<input id="name" name="name" type="text" maxlength="40" placeholder="Иван Иванов" required="">
+											<label for="name">Ваше имя</label>
+										</div>
+										<div class="inputfield__wrap">
+											<input id="email" name="email" type="email" maxlength="30" placeholder="example@domain.com" required="">
+											<label for="email">Ваш E-mail</label>
+										</div>
+										<div class="inputfield__wrap">
+											<input id="phone" name="phone" type="tel" maxlength="11" placeholder="+7(999)-999-99-99" required="">
+											<label for="phone">Ваш телефон</label>
+										</div>
+									</div>
+									<div class="checkfield__wrap">
+										<label>Согласен на <a class="privacy__policy" href="" target="blank_">&nbsp;обработку&nbsp;</a> персональных данных<input id="agreement" name="agreement" type="checkbox" checked="checked" required>
+											<span class="checkmark"></span>
+										</label>
+									</div>
+									<div class="inputfield__wrap">
+										<textarea id="message" name="message" type="text" maxlength="400" rows="5" placeholder="Хотелось бы осмотреть товар..." required=""></textarea>
+										<label for="message">Ваше сообщение</label>
+									</div>
+									<div class="sendmessage__btn__wrap">
+										<button type="submit" class="sendmessage__btn" href="#success__modal">ОТПРАВИТЬ</button>
+									</div>
+								</div>
+								<div id="success__modal__wrap" class="success__modal__wrap">
+									<div class="success__modal">
+										<div class="modal__header">
+											<div class="icon__wrap">
+												<i class="fas fa-check-circle"></i>
+											</div>
+											<h3>Заказ оформлен!</h3>
+										</div>
+										<div class="horizontal__blackline"></div>
+										<div class="modal__content">
+											<p>Наш оператор свяжется с Вами в ближайшее время для уточнения деталей заказа, спасибо!</p>
+										</div>
+										<div class="ok__btn__wrap">
+											<button type="submit" class="ok__btn">ОК</button>
+										</div>
+									</div>
+								</div>		
+							</form>
+						</div>
+						<div class="feedback__info__wrap">
+							<div class="feedback__info">
+								<div class="info__block info__address">
+									<div class="icon_wrap">
+										<i class="fas fa-map-marker"></i>
+									</div>
+									<ul class="nondot-uniquelist">
+										<li>г. Хабаровск</li>
+										<li>ул. Воронежская, 129б - офиc</li>
+										<li>ул. Кирова, 1 литера Л - производственные помещения</li>
+									</ul>
+								</div>
+								<div class="info__block info__phone">
+									<div class="icon_wrap">
+										<i class="fas fa-mobile"></i>
+									</div>
+									<ul class="nondot-uniquelist">
+										<li>Руководитель компании (тех. консультации):</li>
+										<li>+7 (914) 158-30-65  (Whatsapp)</li>
+										<li>+7 (4212) 20-30-65</li>
+										<li style="margin-bottom: 5px;"></li>
+										<li>Офис:</li>
+										<li>+7 (4212) 20-10-51 (офис)</li>
+										<li>+7 (914) 158-10-51 (w/a)</li>
+										<li>+7 (924) 411-10-51</li>
+									</ul>
+									<ul class="nondot-uniquelist">
+									</ul>
+								</div>
+								<div class="info__block info__email">
+									<div class="icon_wrap">
+										<i class="fas fa-envelope-open"></i>
+									</div>
+									<p>feedback@habmotors.ru </p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer__wrap">
+				<div class="copyright__line">
+					<p>&copy; 2018 OOO &laquo;ХабМоторс&raquo;</p>
+				</div>
+				<div class="socials__wrap">
+					<a href="https://www.facebook.com/people/%D0%90%D0%BB%D0%B5%D0%BA%D1%81%D0%B5%D0%B9-%D0%94%D0%B5%D0%BC%D0%B8%D0%B4%D0%B5%D0%BD%D0%BA%D0%BE/100024866406881"><i class="fab fa-facebook-f"></i></a>
+					<a href="https://www.youtube.com/watch?v=Wg7aFRPLv0k"><i class="fab fa-youtube"></i></a>
+					<a href="https://www.instagram.com/technoengineering_khv/?hl=ru"><i class="fab fa-instagram"></i></a>
+				</div>
+			</div>
+		</div>
+	<script src="javascripts/libs.min.js" type="text/javascript"></script>
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+	<script src="javascripts/scripts.js" type="text/javascript"></script>
+	<!--[if lt IE 9]>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+	<![endif]-->
+	<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+		<div class="pswp__bg"></div>
+		<div class="pswp__scroll-wrap">
+			<div class="pswp__container">
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+				<div class="pswp__item"></div>
+			</div>
+			<div class="pswp__ui pswp__ui--hidden">
+				<div class="pswp__top-bar">
+					<div class="pswp__counter"></div>
+					<button class="pswp__button pswp__button--close" title="Закрыть (Esc)"><i class="fas fa-times pswp__button--close"></i></button>
+					<button class="pswp__button pswp__button--share" title="Поделиться"></button>
+					<button class="pswp__button pswp__button--fs" title="Полноэкранный режим"></button>
+					<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+					<div class="pswp__preloader">
+						<div class="pswp__preloader__icn">
+							<div class="pswp__preloader__cut">
+								<div class="pswp__preloader__donut"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+					<div class="pswp__share-tooltip"></div> 
+				</div>
+				<button class="pswp__button pswp__button--arrow--left"><i class="fas fa-chevron-left pswp__button--arrow--left"></i></button>
+				<button class="pswp__button pswp__button--arrow--right"><i class="fas fa-chevron-right pswp__button--arrow--right"></i></button>
+				<div class="pswp__caption">
+					<div class="pswp__caption__center"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
